@@ -1,5 +1,6 @@
 package core.game;
 
+import ar.uba.fi.celdas.TheoryPersistant;
 import core.competition.CompetitionParameters;
 import core.content.Content;
 import core.content.GameContent;
@@ -1179,6 +1180,7 @@ public abstract class Game {
 			}
 		}
 
+		TheoryPersistant.write();
 		System.out.println("Result (1->win; 0->lose): " + sb1 + sb2 + "timesteps:" + this.getGameTick());
 		// System.out.println("Result (1->win; 0->lose):"+ winner.key() + ",
 		// Score:" + score + ", timesteps:" + this.getGameTick());
