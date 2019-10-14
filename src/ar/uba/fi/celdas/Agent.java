@@ -92,8 +92,9 @@ public class Agent extends AbstractPlayer {
             if (theoryToUse.getUtility() == 0f || (theoryToUse.getUtility() < 10f && explore && currentStateAvailableTheories.size() != stateObs.getAvailableActions().size())) {
                 // Ninguna teoria cumple con la utilidad de ganar, y existen movimientos por explorar
                 theoryToUse = createTheoryWithUnusedAction(perception.getLevel(), currentStateAvailableTheories, stateObs.getAvailableActions());
+            } else {
+                theoryToUse.setUsedCount(theoryToUse.getUsedCount() + 1);
             }
-            theoryToUse.setUsedCount(theoryToUse.getUsedCount() + 1);
         }
 
         System.out.println("AGENTE decide moverse: " + theoryToUse.getAction());

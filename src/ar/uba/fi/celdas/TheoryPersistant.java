@@ -21,24 +21,27 @@ public class TheoryPersistant {
         TheoryPersistant.lastUsedTheory = lastUsedTheory;
     }
 
-    private static void updateLastUsedTheory(Types.WINNER playerWinState) {
+    private static void updateLastUsedTheory(Types.WINNER playerWinState, boolean maxStepsReached) {
         if (lastUsedTheory != null) {
             for (Theory theory : theories.getTheories().get(lastUsedTheory.hashCodeOnlyCurrentState())) {
                 if (theory.hashCode() == lastUsedTheory.hashCode()) {
                     char[][] result;
-                    switch(playerWinState) {
+                    switch (playerWinState) {
                         case PLAYER_LOSES:
-                            if(theory.getSuccessCount() > 0) {
-                                theory.setSuccessCount(theory.getSuccessCount() - 1);
+                            if (maxStepsReached) {
+                                if (theory.getUsedCount() == 1) {
+                                    theory.setUtility(5f);
+                                }
+                            } else {
+                                theory.setUtility(0f);
+                                result = new char[][]{{'D', 'I', 'E'}};
+                                theory.setPredictedState(result);
                             }
-                            theory.setUtility(0);
-                            result = new char[][]{{'D','I','E'}};
-                            theory.setPredictedState(result);
                             break;
                         case PLAYER_WINS:
                             theory.setSuccessCount(theory.getSuccessCount() + 1);
-                            theory.setUtility(10);
-                            result = new char[][]{{'W','I','N'}};
+                            theory.setUtility(10f);
+                            result = new char[][]{{'W', 'I', 'N'}};
                             theory.setPredictedState(result);
                             break;
                     }
@@ -47,8 +50,8 @@ public class TheoryPersistant {
         }
     }
 
-    public static void write(Types.WINNER playerWinState) {
-        updateLastUsedTheory(playerWinState);
+    public static void write(Types.WINNER playerWinState, boolean maxStepsReached) {
+        updateLastUsedTheory(playerWinState, maxStepsReached);
         try {
             try (Writer writer = new FileWriter(FILEANME)) {
                 Gson gson = new GsonBuilder().setPrettyPrinting().create();

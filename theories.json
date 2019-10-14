@@ -37,8 +37,8 @@
             " "
           ]
         ],
-        "usedCount": 59,
-        "successCount": 59,
+        "usedCount": 115,
+        "successCount": 115,
         "utility": 5.0
       },
       {
@@ -77,8 +77,8 @@
             " "
           ]
         ],
-        "usedCount": 43,
-        "successCount": 42,
+        "usedCount": 96,
+        "successCount": 95,
         "utility": 5.0
       },
       {
@@ -117,8 +117,8 @@
             " "
           ]
         ],
-        "usedCount": 57,
-        "successCount": 56,
+        "usedCount": 126,
+        "successCount": 125,
         "utility": 5.0
       },
       {
@@ -157,8 +157,8 @@
             " "
           ]
         ],
-        "usedCount": 49,
-        "successCount": 48,
+        "usedCount": 116,
+        "successCount": 115,
         "utility": 5.0
       }
     ],
@@ -199,8 +199,8 @@
             " "
           ]
         ],
-        "usedCount": 87,
-        "successCount": 87,
+        "usedCount": 190,
+        "successCount": 190,
         "utility": 5.0
       },
       {
@@ -239,8 +239,8 @@
             " "
           ]
         ],
-        "usedCount": 70,
-        "successCount": 69,
+        "usedCount": 153,
+        "successCount": 152,
         "utility": 5.0
       },
       {
@@ -275,12 +275,12 @@
           ],
           [
             " ",
-            "w",
+            ".",
             " "
           ]
         ],
-        "usedCount": 86,
-        "successCount": 85,
+        "usedCount": 176,
+        "successCount": 175,
         "utility": 5.0
       },
       {
@@ -311,16 +311,16 @@
           [
             ".",
             "A",
-            "."
+            "w"
           ],
           [
             " ",
-            "w",
+            "t",
             " "
           ]
         ],
-        "usedCount": 91,
-        "successCount": 90,
+        "usedCount": 176,
+        "successCount": 175,
         "utility": 5.0
       }
     ],
@@ -361,8 +361,8 @@
             " "
           ]
         ],
-        "usedCount": 119,
-        "successCount": 119,
+        "usedCount": 279,
+        "successCount": 279,
         "utility": 5.0
       },
       {
@@ -401,8 +401,8 @@
             " "
           ]
         ],
-        "usedCount": 134,
-        "successCount": 133,
+        "usedCount": 328,
+        "successCount": 327,
         "utility": 5.0
       },
       {
@@ -441,8 +441,8 @@
             " "
           ]
         ],
-        "usedCount": 135,
-        "successCount": 134,
+        "usedCount": 336,
+        "successCount": 335,
         "utility": 5.0
       },
       {
@@ -481,8 +481,8 @@
             " "
           ]
         ],
-        "usedCount": 134,
-        "successCount": 133,
+        "usedCount": 317,
+        "successCount": 316,
         "utility": 5.0
       }
     ],
@@ -523,8 +523,8 @@
             " "
           ]
         ],
-        "usedCount": 44,
-        "successCount": 44,
+        "usedCount": 81,
+        "successCount": 81,
         "utility": 5.0
       },
       {
@@ -563,8 +563,8 @@
             " "
           ]
         ],
-        "usedCount": 36,
-        "successCount": 35,
+        "usedCount": 64,
+        "successCount": 63,
         "utility": 5.0
       },
       {
@@ -603,8 +603,8 @@
             " "
           ]
         ],
-        "usedCount": 30,
-        "successCount": 29,
+        "usedCount": 59,
+        "successCount": 58,
         "utility": 5.0
       },
       {
@@ -643,8 +643,8 @@
             " "
           ]
         ],
-        "usedCount": 34,
-        "successCount": 33,
+        "usedCount": 57,
+        "successCount": 56,
         "utility": 5.0
       }
     ],
@@ -685,8 +685,8 @@
             " "
           ]
         ],
-        "usedCount": 38,
-        "successCount": 38,
+        "usedCount": 64,
+        "successCount": 64,
         "utility": 5.0
       },
       {
@@ -725,8 +725,8 @@
             " "
           ]
         ],
-        "usedCount": 36,
-        "successCount": 35,
+        "usedCount": 76,
+        "successCount": 75,
         "utility": 5.0
       },
       {
@@ -765,8 +765,8 @@
             " "
           ]
         ],
-        "usedCount": 21,
-        "successCount": 20,
+        "usedCount": 58,
+        "successCount": 57,
         "utility": 5.0
       },
       {
@@ -805,8 +805,8 @@
             " "
           ]
         ],
-        "usedCount": 44,
-        "successCount": 43,
+        "usedCount": 96,
+        "successCount": 95,
         "utility": 5.0
       }
     ],
@@ -847,8 +847,8 @@
             " "
           ]
         ],
-        "usedCount": 6,
-        "successCount": 6,
+        "usedCount": 18,
+        "successCount": 18,
         "utility": 5.0
       },
       {
@@ -917,8 +917,8 @@
             " "
           ]
         ],
-        "usedCount": 12,
-        "successCount": 11,
+        "usedCount": 23,
+        "successCount": 22,
         "utility": 5.0
       },
       {
@@ -957,8 +957,8 @@
             " "
           ]
         ],
-        "usedCount": 8,
-        "successCount": 7,
+        "usedCount": 17,
+        "successCount": 16,
         "utility": 5.0
       }
     ],
@@ -991,7 +991,7 @@
           [
             ".",
             "A",
-            "."
+            "t"
           ],
           [
             " ",
@@ -999,8 +999,8 @@
             " "
           ]
         ],
-        "usedCount": 123,
-        "successCount": 123,
+        "usedCount": 267,
+        "successCount": 267,
         "utility": 5.0
       },
       {
@@ -1039,8 +1039,8 @@
             " "
           ]
         ],
-        "usedCount": 111,
-        "successCount": 110,
+        "usedCount": 248,
+        "successCount": 247,
         "utility": 5.0
       },
       {
@@ -1079,8 +1079,8 @@
             " "
           ]
         ],
-        "usedCount": 124,
-        "successCount": 123,
+        "usedCount": 257,
+        "successCount": 256,
         "utility": 5.0
       },
       {
@@ -1119,8 +1119,8 @@
             " "
           ]
         ],
-        "usedCount": 97,
-        "successCount": 96,
+        "usedCount": 241,
+        "successCount": 240,
         "utility": 5.0
       }
     ],
@@ -1161,8 +1161,8 @@
             " "
           ]
         ],
-        "usedCount": 124,
-        "successCount": 124,
+        "usedCount": 292,
+        "successCount": 292,
         "utility": 5.0
       },
       {
@@ -1201,8 +1201,8 @@
             " "
           ]
         ],
-        "usedCount": 121,
-        "successCount": 120,
+        "usedCount": 278,
+        "successCount": 277,
         "utility": 5.0
       },
       {
@@ -1241,8 +1241,8 @@
             " "
           ]
         ],
-        "usedCount": 121,
-        "successCount": 120,
+        "usedCount": 250,
+        "successCount": 249,
         "utility": 5.0
       },
       {
@@ -1281,8 +1281,8 @@
             " "
           ]
         ],
-        "usedCount": 127,
-        "successCount": 126,
+        "usedCount": 289,
+        "successCount": 288,
         "utility": 5.0
       }
     ],
@@ -1323,8 +1323,8 @@
             " "
           ]
         ],
-        "usedCount": 134,
-        "successCount": 134,
+        "usedCount": 326,
+        "successCount": 326,
         "utility": 5.0
       },
       {
@@ -1363,8 +1363,8 @@
             " "
           ]
         ],
-        "usedCount": 131,
-        "successCount": 130,
+        "usedCount": 307,
+        "successCount": 306,
         "utility": 5.0
       },
       {
@@ -1403,8 +1403,8 @@
             " "
           ]
         ],
-        "usedCount": 147,
-        "successCount": 146,
+        "usedCount": 308,
+        "successCount": 307,
         "utility": 5.0
       },
       {
@@ -1443,8 +1443,8 @@
             " "
           ]
         ],
-        "usedCount": 139,
-        "successCount": 138,
+        "usedCount": 316,
+        "successCount": 315,
         "utility": 5.0
       }
     ],
@@ -1485,8 +1485,8 @@
             " "
           ]
         ],
-        "usedCount": 28,
-        "successCount": 28,
+        "usedCount": 49,
+        "successCount": 49,
         "utility": 5.0
       },
       {
@@ -1525,8 +1525,8 @@
             " "
           ]
         ],
-        "usedCount": 24,
-        "successCount": 23,
+        "usedCount": 47,
+        "successCount": 46,
         "utility": 5.0
       },
       {
@@ -1565,8 +1565,8 @@
             " "
           ]
         ],
-        "usedCount": 31,
-        "successCount": 30,
+        "usedCount": 71,
+        "successCount": 70,
         "utility": 5.0
       },
       {
@@ -1605,8 +1605,8 @@
             " "
           ]
         ],
-        "usedCount": 22,
-        "successCount": 21,
+        "usedCount": 53,
+        "successCount": 52,
         "utility": 5.0
       }
     ],
@@ -1647,8 +1647,8 @@
             " "
           ]
         ],
-        "usedCount": 36,
-        "successCount": 36,
+        "usedCount": 80,
+        "successCount": 80,
         "utility": 5.0
       },
       {
@@ -1687,8 +1687,8 @@
             " "
           ]
         ],
-        "usedCount": 24,
-        "successCount": 23,
+        "usedCount": 59,
+        "successCount": 58,
         "utility": 5.0
       },
       {
@@ -1757,8 +1757,8 @@
             " "
           ]
         ],
-        "usedCount": 21,
-        "successCount": 20,
+        "usedCount": 59,
+        "successCount": 58,
         "utility": 5.0
       }
     ],
@@ -1799,8 +1799,8 @@
             " "
           ]
         ],
-        "usedCount": 18,
-        "successCount": 18,
+        "usedCount": 29,
+        "successCount": 29,
         "utility": 5.0
       },
       {
@@ -1839,8 +1839,8 @@
             " "
           ]
         ],
-        "usedCount": 17,
-        "successCount": 16,
+        "usedCount": 37,
+        "successCount": 36,
         "utility": 5.0
       },
       {
@@ -1879,8 +1879,8 @@
             " "
           ]
         ],
-        "usedCount": 17,
-        "successCount": 16,
+        "usedCount": 31,
+        "successCount": 30,
         "utility": 5.0
       },
       {
@@ -1919,8 +1919,8 @@
             " "
           ]
         ],
-        "usedCount": 12,
-        "successCount": 11,
+        "usedCount": 25,
+        "successCount": 24,
         "utility": 5.0
       }
     ],
@@ -1961,8 +1961,8 @@
             " "
           ]
         ],
-        "usedCount": 18,
-        "successCount": 18,
+        "usedCount": 24,
+        "successCount": 24,
         "utility": 5.0
       },
       {
@@ -2001,8 +2001,8 @@
             " "
           ]
         ],
-        "usedCount": 15,
-        "successCount": 14,
+        "usedCount": 27,
+        "successCount": 26,
         "utility": 5.0
       },
       {
@@ -2041,8 +2041,8 @@
             " "
           ]
         ],
-        "usedCount": 17,
-        "successCount": 16,
+        "usedCount": 27,
+        "successCount": 26,
         "utility": 5.0
       },
       {
@@ -2113,8 +2113,8 @@
             " "
           ]
         ],
-        "usedCount": 19,
-        "successCount": 19,
+        "usedCount": 30,
+        "successCount": 30,
         "utility": 5.0
       },
       {
@@ -2153,8 +2153,8 @@
             " "
           ]
         ],
-        "usedCount": 8,
-        "successCount": 7,
+        "usedCount": 34,
+        "successCount": 33,
         "utility": 5.0
       },
       {
@@ -2223,8 +2223,8 @@
             " "
           ]
         ],
-        "usedCount": 18,
-        "successCount": 17,
+        "usedCount": 39,
+        "successCount": 38,
         "utility": 5.0
       }
     ],
@@ -2265,8 +2265,8 @@
             " "
           ]
         ],
-        "usedCount": 20,
-        "successCount": 20,
+        "usedCount": 31,
+        "successCount": 31,
         "utility": 5.0
       },
       {
@@ -2305,8 +2305,8 @@
             " "
           ]
         ],
-        "usedCount": 11,
-        "successCount": 10,
+        "usedCount": 20,
+        "successCount": 19,
         "utility": 5.0
       },
       {
@@ -2345,8 +2345,8 @@
             " "
           ]
         ],
-        "usedCount": 16,
-        "successCount": 15,
+        "usedCount": 26,
+        "successCount": 25,
         "utility": 5.0
       },
       {
@@ -2447,8 +2447,8 @@
             " "
           ]
         ],
-        "usedCount": 13,
-        "successCount": 12,
+        "usedCount": 30,
+        "successCount": 29,
         "utility": 5.0
       },
       {
@@ -2487,8 +2487,8 @@
             " "
           ]
         ],
-        "usedCount": 9,
-        "successCount": 8,
+        "usedCount": 41,
+        "successCount": 40,
         "utility": 5.0
       },
       {
@@ -2527,8 +2527,8 @@
             " "
           ]
         ],
-        "usedCount": 10,
-        "successCount": 9,
+        "usedCount": 28,
+        "successCount": 27,
         "utility": 5.0
       }
     ],
@@ -2569,8 +2569,8 @@
             " "
           ]
         ],
-        "usedCount": 16,
-        "successCount": 16,
+        "usedCount": 33,
+        "successCount": 33,
         "utility": 5.0
       },
       {
@@ -2639,8 +2639,8 @@
             " "
           ]
         ],
-        "usedCount": 10,
-        "successCount": 9,
+        "usedCount": 25,
+        "successCount": 24,
         "utility": 5.0
       },
       {
@@ -2679,8 +2679,8 @@
             " "
           ]
         ],
-        "usedCount": 11,
-        "successCount": 10,
+        "usedCount": 23,
+        "successCount": 22,
         "utility": 5.0
       }
     ],
@@ -2831,8 +2831,8 @@
             "N"
           ]
         ],
-        "usedCount": 3,
-        "successCount": 2,
+        "usedCount": 7,
+        "successCount": 6,
         "utility": 10.0
       }
     ]
