@@ -27,6 +27,7 @@ public class Agent extends AbstractPlayer {
 
     protected Theories theories;
 
+    private char[][] lastGameState;
     private Theory lastUsedTheory;
 
     /**
@@ -96,6 +97,7 @@ public class Agent extends AbstractPlayer {
         }
 
         System.out.println("AGENTE decide moverse: " + theoryToUse.getAction());
+        lastGameState = perception.getLevel();
         lastUsedTheory = theoryToUse;
 
         TheoryPersistant.save(theories, lastUsedTheory);
@@ -103,6 +105,7 @@ public class Agent extends AbstractPlayer {
     }
 
     private char[][] buildTheoryState(char[][] gameState) {
+        // Buscamos la posicion del agente
         int playerX = 0;
         int playerY = 0;
         for (int i = 0; i < gameState.length; i++) {
@@ -113,32 +116,47 @@ public class Agent extends AbstractPlayer {
                 }
             }
         }
+        // Inicializacion del resultado vacio
         char[][] result = new char[3][3];
-        int auxX = playerX - 1;
-        int auxY = playerY - 1;
         for (int x = 0; x < result.length; x++) {
             for (int y = 0; y < result[x].length; y++) {
-                if (auxX >= 0 && auxX < gameState.length && auxY >= 0 && auxY < gameState[0].length) {
-                    result[x][y] = gameState[auxX][auxY];
-                } else {
-                    result[x][y] = 'w';
-                }
-                auxY++;
+                result[x][y] = ' ';
+            }
+        }
+        // Cargamos en el resultado al agente y su entorno
+        // Oeste y Este -----------------------------------
+        int auxX = playerX - 1;
+        int auxY = playerY;
+        for (int x = 0; x < result.length; x++) {
+            if (auxX >= 0 && auxX < gameState[0].length) {
+                result[x][1] = gameState[auxX][auxY];
             }
             auxX++;
-            auxY = playerY - 1;
+        }
+        // Norte y Sur ------------------------------------
+        auxX = playerX;
+        auxY = playerY - 1;
+        for (int y = 0; y < result[1].length; y++) {
+            if (auxY >= 0 && auxY < gameState[0].length) {
+                result[1][y] = gameState[auxX][auxY];
+            }
+            auxY++;
         }
         return result;
     }
 
-    private void updateLastUsedTheory(char[][] currentState, boolean isPlayerAlive) {
+    private void updateLastUsedTheory(char[][] currentGameState, boolean isPlayerAlive) {
         if (lastUsedTheory != null) {
             for (Theory theory : theories.getTheories().get(lastUsedTheory.hashCodeOnlyCurrentState())) {
                 if (theory.getCurrentState() == lastUsedTheory.getCurrentState() && theory.getAction() == lastUsedTheory.getAction()) {
-                    theory.setPredictedState(buildTheoryState(currentState));
+                    theory.setPredictedState(buildTheoryState(currentGameState));
                     if (isPlayerAlive) {
                         theory.setSuccessCount(theory.getSuccessCount() + 1);
-                        theory.setUtility(1f);
+                        if(currentGameState.hashCode() == lastGameState.hashCode()) {
+                            theory.setUtility(1f);
+                        } else {
+                            theory.setUtility(5f);
+                        }
                     }
                 }
             }
