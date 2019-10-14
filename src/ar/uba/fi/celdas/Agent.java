@@ -1,7 +1,5 @@
 package ar.uba.fi.celdas;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.*;
 
 import core.game.StateObservation;
@@ -52,18 +50,17 @@ public class Agent extends AbstractPlayer {
      * @return An action for the current state
      */
     public Types.ACTIONS act(StateObservation stateObs, ElapsedCpuTimer elapsedTimer) {
-
         Perception perception = new Perception(stateObs);
-        System.out.println(perception.toString());
 
-        // Debemos actualizar la ultima teoria usada
+        // Actualizamos la ultima teoria usada
         updateLastUsedTheory(perception.getLevel(), stateObs.isAvatarAlive());
 
         if (theories == null) {
             theories = TheoryPersistant.load();
         }
+
         Theory theoryToUse = new Theory();
-        theoryToUse.setCurrentState(perception.getLevel());
+        theoryToUse.setCurrentState(buildTheoryState(perception.getLevel()));
         List<Theory> currentStateAvailableTheories = theories.getTheories().get(theoryToUse.hashCodeOnlyCurrentState());
         if (currentStateAvailableTheories == null || currentStateAvailableTheories.size() == 0) {
             // No existen teorias para el estado de juego actual
@@ -71,14 +68,28 @@ public class Agent extends AbstractPlayer {
         } else {
             // Existen teorias para el estado de juego actual
             float maxUtility = 0;
+            List<Theory> maxUtilityTheories = new ArrayList<>();
             for (Theory theory : currentStateAvailableTheories) {
                 if (theory.getUtility() > maxUtility) {
                     maxUtility = theory.getUtility();
-                    theoryToUse = theory;
+                    maxUtilityTheories = new ArrayList<>();
+                    maxUtilityTheories.add(theory);
+                } else if (theory.getUtility() == maxUtility) {
+                    maxUtilityTheories.add(theory);
                 }
             }
-            if (theoryToUse.getUtility() < 0.25f && currentStateAvailableTheories.size() != stateObs.getAvailableActions().size()) {
-                // Ninguna teoria cumple con una utilidad alta, y existen movimientos por explorar
+            Random random = new Random();
+            if (maxUtilityTheories.size() > 0) {
+                theoryToUse = maxUtilityTheories.get(random.nextInt(maxUtilityTheories.size()));
+            }
+
+            // Probabilidad de explorar una nueva teoria
+            boolean explore = false;
+            if (random.nextFloat() > 0.7) {
+                explore = true;
+            }
+            if (theoryToUse.getUtility() == 0f || (theoryToUse.getUtility() < 10f && explore && currentStateAvailableTheories.size() != stateObs.getAvailableActions().size())) {
+                // Ninguna teoria cumple con la utilidad de ganar, y existen movimientos por explorar
                 theoryToUse = createTheoryWithUnusedAction(perception.getLevel(), currentStateAvailableTheories, stateObs.getAvailableActions());
             }
             theoryToUse.setUsedCount(theoryToUse.getUsedCount() + 1);
@@ -87,27 +98,56 @@ public class Agent extends AbstractPlayer {
         System.out.println("AGENTE decide moverse: " + theoryToUse.getAction());
         lastUsedTheory = theoryToUse;
 
-        TheoryPersistant.save(theories);
+        TheoryPersistant.save(theories, lastUsedTheory);
         return theoryToUse.getAction();
+    }
+
+    private char[][] buildTheoryState(char[][] gameState) {
+        int playerX = 0;
+        int playerY = 0;
+        for (int i = 0; i < gameState.length; i++) {
+            for (int j = 0; j < gameState[i].length; j++) {
+                if (gameState[i][j] == 'A') {
+                    playerX = i;
+                    playerY = j;
+                }
+            }
+        }
+        char[][] result = new char[3][3];
+        int auxX = playerX - 1;
+        int auxY = playerY - 1;
+        for (int x = 0; x < result.length; x++) {
+            for (int y = 0; y < result[x].length; y++) {
+                if (auxX >= 0 && auxX < gameState.length && auxY >= 0 && auxY < gameState[0].length) {
+                    result[x][y] = gameState[auxX][auxY];
+                } else {
+                    result[x][y] = 'w';
+                }
+                auxY++;
+            }
+            auxX++;
+            auxY = playerY - 1;
+        }
+        return result;
     }
 
     private void updateLastUsedTheory(char[][] currentState, boolean isPlayerAlive) {
         if (lastUsedTheory != null) {
             for (Theory theory : theories.getTheories().get(lastUsedTheory.hashCodeOnlyCurrentState())) {
                 if (theory.getCurrentState() == lastUsedTheory.getCurrentState() && theory.getAction() == lastUsedTheory.getAction()) {
-                    theory.setPredictedState(currentState);
+                    theory.setPredictedState(buildTheoryState(currentState));
                     if (isPlayerAlive) {
                         theory.setSuccessCount(theory.getSuccessCount() + 1);
+                        theory.setUtility(1f);
                     }
-                    theory.setUtility(new Float(theory.getSuccessCount()) / theory.getUsedCount() / theory.getUsedCount());
                 }
             }
         }
     }
 
-    private Theory createNewTheory(char[][] currentState) {
+    private Theory createNewTheory(char[][] gameState) {
         Theory result = new Theory();
-        result.setCurrentState(currentState);
+        result.setCurrentState(buildTheoryState(gameState));
         int index = randomGenerator.nextInt(actions.size());
         result.setAction(actions.get(index));
         result.setUsedCount(1);
@@ -119,13 +159,13 @@ public class Agent extends AbstractPlayer {
         return result;
     }
 
-    private Theory createTheoryWithUnusedAction(char[][] currentState, List<Theory> currentStateAvailableTheories, Collection<Types.ACTIONS> availableActions) {
+    private Theory createTheoryWithUnusedAction(char[][] gameState, List<Theory> currentStateAvailableTheories, Collection<Types.ACTIONS> availableActions) {
         Set<Types.ACTIONS> unusedActions = new HashSet<>(availableActions);
         for (Theory theory : currentStateAvailableTheories) {
             unusedActions.remove(theory.getAction());
         }
         Theory result = new Theory();
-        result.setCurrentState(currentState);
+        result.setCurrentState(buildTheoryState(gameState));
         int index = randomGenerator.nextInt(unusedActions.size());
         result.setAction(new ArrayList<>(unusedActions).get(index));
         result.setUsedCount(1);

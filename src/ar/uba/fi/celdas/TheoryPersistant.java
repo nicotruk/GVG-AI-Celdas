@@ -8,17 +8,47 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonIOException;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
+import ontology.Types;
 
 public class TheoryPersistant {
 
     public static final String FILEANME = "theories.json";
     private static Theories theories;
+    private static Theory lastUsedTheory;
 
-    public static void save(Theories theories) {
+    public static void save(Theories theories, Theory lastUsedTheory) {
         TheoryPersistant.theories = theories;
+        TheoryPersistant.lastUsedTheory = lastUsedTheory;
     }
 
-    public static void write() {
+    private static void updateLastUsedTheory(Types.WINNER playerWinState) {
+        if (lastUsedTheory != null) {
+            for (Theory theory : theories.getTheories().get(lastUsedTheory.hashCodeOnlyCurrentState())) {
+                if (theory.hashCode() == lastUsedTheory.hashCode()) {
+                    char[][] result;
+                    switch(playerWinState) {
+                        case PLAYER_LOSES:
+                            if(theory.getSuccessCount() > 0) {
+                                theory.setSuccessCount(theory.getSuccessCount() - 1);
+                            }
+                            theory.setUtility(0);
+                            result = new char[][]{{'D','I','E'}};
+                            theory.setPredictedState(result);
+                            break;
+                        case PLAYER_WINS:
+                            theory.setSuccessCount(theory.getSuccessCount() + 1);
+                            theory.setUtility(10);
+                            result = new char[][]{{'W','I','N'}};
+                            theory.setPredictedState(result);
+                            break;
+                    }
+                }
+            }
+        }
+    }
+
+    public static void write(Types.WINNER playerWinState) {
+        updateLastUsedTheory(playerWinState);
         try {
             try (Writer writer = new FileWriter(FILEANME)) {
                 Gson gson = new GsonBuilder().setPrettyPrinting().create();

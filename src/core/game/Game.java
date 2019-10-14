@@ -1174,13 +1174,13 @@ public abstract class Game {
 			if (avatars[i] != null) {
 				sb1 += "Player" + i + ":" + avatars[i].getWinState().key() + ", ";
 				sb2 += "Player" + i + "-Score:" + avatars[i].getScore() + ", ";
+				TheoryPersistant.write(avatars[i].getWinState());
 			} else {
 				sb1 += "Player" + i + ":-100, ";
 				sb2 += "Player" + i + "-Score:" + Types.SCORE_DISQ + ", ";
 			}
 		}
 
-		TheoryPersistant.write();
 		System.out.println("Result (1->win; 0->lose): " + sb1 + sb2 + "timesteps:" + this.getGameTick());
 		// System.out.println("Result (1->win; 0->lose):"+ winner.key() + ",
 		// Score:" + score + ", timesteps:" + this.getGameTick());

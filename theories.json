@@ -1,0 +1,5374 @@
+{
+  "theories": {
+    "829505713": [
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 373,
+        "successCount": 373,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 388,
+        "successCount": 387,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 374,
+        "successCount": 373,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "D",
+            "I",
+            "E"
+          ]
+        ],
+        "usedCount": 168,
+        "successCount": 165,
+        "utility": 0.0
+      }
+    ],
+    "-1967165218": [
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 424,
+        "successCount": 424,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 388,
+        "successCount": 387,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 383,
+        "successCount": 382,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 357,
+        "successCount": 356,
+        "utility": 1.0
+      }
+    ],
+    "-2004877606": [
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 186,
+        "successCount": 186,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 177,
+        "successCount": 176,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 156,
+        "successCount": 155,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "D",
+            "I",
+            "E"
+          ]
+        ],
+        "usedCount": 47,
+        "successCount": 44,
+        "utility": 0.0
+      }
+    ],
+    "829575866": [
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 195,
+        "successCount": 195,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 215,
+        "successCount": 214,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 212,
+        "successCount": 211,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 214,
+        "successCount": 213,
+        "utility": 1.0
+      }
+    ],
+    "1824096245": [
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 93,
+        "successCount": 93,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 109,
+        "successCount": 108,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "usedCount": 108,
+        "successCount": 107,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 109,
+        "successCount": 108,
+        "utility": 1.0
+      }
+    ],
+    "-504334082": [
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "t",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 104,
+        "successCount": 104,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 88,
+        "successCount": 87,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 94,
+        "successCount": 93,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 108,
+        "successCount": 107,
+        "utility": 1.0
+      }
+    ],
+    "988747454": [
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 99,
+        "successCount": 99,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "usedCount": 96,
+        "successCount": 95,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 123,
+        "successCount": 122,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 92,
+        "successCount": 91,
+        "utility": 1.0
+      }
+    ],
+    "-1964918059": [
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 278,
+        "successCount": 278,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "usedCount": 268,
+        "successCount": 267,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 299,
+        "successCount": 298,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 283,
+        "successCount": 282,
+        "utility": 1.0
+      }
+    ],
+    "706114659": [
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 175,
+        "successCount": 175,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 175,
+        "successCount": 174,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 204,
+        "successCount": 203,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 197,
+        "successCount": 196,
+        "utility": 1.0
+      }
+    ],
+    "-1964990475": [
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 89,
+        "successCount": 89,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "usedCount": 90,
+        "successCount": 89,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 109,
+        "successCount": 108,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 91,
+        "successCount": 90,
+        "utility": 1.0
+      }
+    ],
+    "988817607": [
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 88,
+        "successCount": 88,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 87,
+        "successCount": 86,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 86,
+        "successCount": 85,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 84,
+        "successCount": 83,
+        "utility": 1.0
+      }
+    ],
+    "-635119234": [
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 146,
+        "successCount": 146,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 145,
+        "successCount": 144,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 147,
+        "successCount": 146,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 159,
+        "successCount": 158,
+        "utility": 1.0
+      }
+    ],
+    "-227278897": [
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "t",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 103,
+        "successCount": 103,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "t",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "D",
+            "I",
+            "E"
+          ]
+        ],
+        "usedCount": 2,
+        "successCount": 0,
+        "utility": 0.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "t",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "t",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 90,
+        "successCount": 89,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "t",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "t",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 96,
+        "successCount": 95,
+        "utility": 1.0
+      }
+    ],
+    "-1214049186": [
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "usedCount": 104,
+        "successCount": 104,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 103,
+        "successCount": 102,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 101,
+        "successCount": 100,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "usedCount": 104,
+        "successCount": 103,
+        "utility": 1.0
+      }
+    ],
+    "-1967092802": [
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 163,
+        "successCount": 163,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 148,
+        "successCount": 147,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 158,
+        "successCount": 157,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 179,
+        "successCount": 178,
+        "utility": 1.0
+      }
+    ],
+    "-1964920322": [
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "usedCount": 105,
+        "successCount": 105,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 102,
+        "successCount": 101,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "usedCount": 106,
+        "successCount": 105,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 107,
+        "successCount": 106,
+        "utility": 1.0
+      }
+    ],
+    "990992350": [
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 150,
+        "successCount": 150,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "t",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 146,
+        "successCount": 145,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "usedCount": 133,
+        "successCount": 132,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 132,
+        "successCount": 131,
+        "utility": 1.0
+      }
+    ],
+    "990990087": [
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 60,
+        "successCount": 60,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 52,
+        "successCount": 51,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "usedCount": 53,
+        "successCount": 52,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 37,
+        "successCount": 36,
+        "utility": 1.0
+      }
+    ],
+    "990919934": [
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 60,
+        "successCount": 60,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 54,
+        "successCount": 53,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "t"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 49,
+        "successCount": 48,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "."
+          ]
+        ],
+        "usedCount": 56,
+        "successCount": 55,
+        "utility": 1.0
+      }
+    ],
+    "36875352": [
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "t"
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 57,
+        "successCount": 57,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "t"
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "D",
+            "I",
+            "E"
+          ]
+        ],
+        "usedCount": 2,
+        "successCount": 0,
+        "utility": 0.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "t"
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "t"
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 42,
+        "successCount": 41,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "t"
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "t"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 43,
+        "successCount": 42,
+        "utility": 1.0
+      }
+    ],
+    "1821849086": [
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 49,
+        "successCount": 49,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "t",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 40,
+        "successCount": 39,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 34,
+        "successCount": 33,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "t"
+          ]
+        ],
+        "usedCount": 37,
+        "successCount": 36,
+        "utility": 1.0
+      }
+    ],
+    "988745191": [
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "t"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 39,
+        "successCount": 39,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 42,
+        "successCount": 41,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "t"
+          ]
+        ],
+        "usedCount": 43,
+        "successCount": 42,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 35,
+        "successCount": 34,
+        "utility": 1.0
+      }
+    ],
+    "117701729": [
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "t"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "t"
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 48,
+        "successCount": 48,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "t"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            "t",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 44,
+        "successCount": 43,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "t"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 36,
+        "successCount": 35,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "t"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 37,
+        "successCount": 36,
+        "utility": 1.0
+      }
+    ],
+    "385547954": [
+      {
+        "currentState": [
+          [
+            ".",
+            "t",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 36,
+        "successCount": 36,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            "t",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "D",
+            "I",
+            "E"
+          ]
+        ],
+        "usedCount": 2,
+        "successCount": 0,
+        "utility": 0.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            "t",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "t"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 34,
+        "successCount": 33,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            "t",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            "t",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 33,
+        "successCount": 32,
+        "utility": 1.0
+      }
+    ],
+    "1618091500": [
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            "t",
+            "w"
+          ]
+        ],
+        "usedCount": 36,
+        "successCount": 36,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 39,
+        "successCount": 38,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 37,
+        "successCount": 36,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            ".",
+            "t",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 28,
+        "successCount": 27,
+        "utility": 1.0
+      }
+    ],
+    "1618158770": [
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            "t",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "D",
+            "I",
+            "E"
+          ]
+        ],
+        "usedCount": 1,
+        "successCount": 0,
+        "utility": 0.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            "t",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "t"
+          ]
+        ],
+        "usedCount": 32,
+        "successCount": 31,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            "t",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            ".",
+            "w"
+          ]
+        ],
+        "usedCount": 30,
+        "successCount": 29,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            "t",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            "t",
+            "w"
+          ]
+        ],
+        "usedCount": 31,
+        "successCount": 30,
+        "utility": 1.0
+      }
+    ],
+    "988747361": [
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "t"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 52,
+        "successCount": 52,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "t"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 39,
+        "successCount": 38,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "t"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "t"
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 26,
+        "successCount": 25,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "t"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "w"
+          ],
+          [
+            ".",
+            "t",
+            "w"
+          ]
+        ],
+        "usedCount": 26,
+        "successCount": 25,
+        "utility": 1.0
+      }
+    ],
+    "-504495871": [
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "t",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "t",
+            "."
+          ]
+        ],
+        "usedCount": 25,
+        "successCount": 25,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "t",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "t",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 36,
+        "successCount": 35,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "t",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "w",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 32,
+        "successCount": 31,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "t",
+            ".",
+            "."
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "t",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 33,
+        "successCount": 32,
+        "utility": 1.0
+      }
+    ],
+    "-1964923205": [
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "t",
+            "."
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "D",
+            "I",
+            "E"
+          ]
+        ],
+        "usedCount": 20,
+        "successCount": 18,
+        "utility": 0.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "t",
+            "."
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "t",
+            "."
+          ]
+        ],
+        "usedCount": 36,
+        "successCount": 35,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "t",
+            "."
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "D",
+            "I",
+            "E"
+          ]
+        ],
+        "usedCount": 2,
+        "successCount": 0,
+        "utility": 0.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "t",
+            "."
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "x",
+            "w",
+            "t"
+          ]
+        ],
+        "usedCount": 25,
+        "successCount": 24,
+        "utility": 1.0
+      }
+    ],
+    "-1299934376": [
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "t"
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "t"
+          ]
+        ],
+        "usedCount": 31,
+        "successCount": 31,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "t"
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "t"
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 24,
+        "successCount": 23,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "t"
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 27,
+        "successCount": 26,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "t"
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "D",
+            "I",
+            "E"
+          ]
+        ],
+        "usedCount": 2,
+        "successCount": 0,
+        "utility": 0.0
+      }
+    ],
+    "-1566335784": [
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "t",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "t",
+            ".",
+            "."
+          ]
+        ],
+        "usedCount": 30,
+        "successCount": 30,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "t",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "t",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 38,
+        "successCount": 37,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "t",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            "D",
+            "I",
+            "E"
+          ]
+        ],
+        "usedCount": 2,
+        "successCount": 0,
+        "utility": 0.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "t",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "w",
+            "w"
+          ]
+        ],
+        "usedCount": 31,
+        "successCount": 30,
+        "utility": 1.0
+      }
+    ],
+    "-1964888361": [
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "x",
+            "w",
+            "t"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "t",
+            "."
+          ]
+        ],
+        "usedCount": 20,
+        "successCount": 20,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "x",
+            "w",
+            "t"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "x",
+            "w",
+            "t"
+          ]
+        ],
+        "usedCount": 13,
+        "successCount": 12,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "x",
+            "w",
+            "t"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "x",
+            "w",
+            "t"
+          ]
+        ],
+        "usedCount": 7,
+        "successCount": 6,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "x",
+            "w",
+            "t"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            ".",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "x",
+            "w"
+          ]
+        ],
+        "usedCount": 11,
+        "successCount": 10,
+        "utility": 1.0
+      }
+    ],
+    "-126918122": [
+      {
+        "currentState": [
+          [
+            ".",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "x",
+            "w"
+          ]
+        ],
+        "action": "ACTION_RIGHT",
+        "predictedState": [
+          [
+            "w",
+            "w",
+            "w"
+          ],
+          [
+            ".",
+            "A",
+            "."
+          ],
+          [
+            "x",
+            "w",
+            "t"
+          ]
+        ],
+        "usedCount": 6,
+        "successCount": 6,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "x",
+            "w"
+          ]
+        ],
+        "action": "ACTION_LEFT",
+        "predictedState": [
+          [
+            ".",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "x",
+            "w"
+          ]
+        ],
+        "usedCount": 5,
+        "successCount": 4,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "x",
+            "w"
+          ]
+        ],
+        "action": "ACTION_UP",
+        "predictedState": [
+          [
+            ".",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "x",
+            "w"
+          ]
+        ],
+        "usedCount": 5,
+        "successCount": 4,
+        "utility": 1.0
+      },
+      {
+        "currentState": [
+          [
+            ".",
+            "w",
+            "w"
+          ],
+          [
+            "w",
+            "A",
+            "."
+          ],
+          [
+            "w",
+            "x",
+            "w"
+          ]
+        ],
+        "action": "ACTION_DOWN",
+        "predictedState": [
+          [
+            "W",
+            "I",
+            "N"
+          ]
+        ],
+        "usedCount": 5,
+        "successCount": 4,
+        "utility": 10.0
+      }
+    ]
+  },
+  "existenceSet": [
+    1653207562,
+    -977792707,
+    1415582310,
+    -876543541,
+    512342530,
+    -1592141171,
+    -1973734193,
+    2005033876,
+    1164439935,
+    -1975339944,
+    -873368213,
+    -131653701,
+    2012107983,
+    -880728286,
+    1486213938,
+    -869469434,
+    2050728720,
+    -1047887071,
+    2082002100,
+    -595097557,
+    -1108890549,
+    -1008259125,
+    2081716134,
+    81362155,
+    -589629201,
+    -1988168373,
+    1879195579,
+    1931463846,
+    -1968265837,
+    1156644786,
+    -711209250,
+    1798078950,
+    1646133455,
+    -498678126,
+    1924389739,
+    284180267,
+    1074643282,
+    -296229067,
+    -1003410350,
+    -78673365,
+    -1471397975,
+    -417676932,
+    1791004843,
+    -1981094266,
+    -114683577,
+    -1381601322,
+    -1873672414,
+    1617272338,
+    -1054961178,
+    -1980808300,
+    -1379274826,
+    -703849177,
+    -582555094,
+    1673689307,
+    2089076207,
+    -977506741,
+    -970432634,
+    156848971,
+    1205701682,
+    -1604766815,
+    -303303174,
+    -870025454,
+    1408508203,
+    1108868203,
+    -588023450,
+    2074642027,
+    -71313292,
+    -1228861772,
+    -599641326,
+    -964583092,
+    -745349845,
+    1691720210,
+    1018226313,
+    -1367078961,
+    338184773,
+    -984866814,
+    -1236221845,
+    1728612216,
+    -738275738,
+    -971657199,
+    1149284713,
+    -1859889522,
+    685473783,
+    1080979197,
+    -296674825,
+    640360898,
+    -454596391,
+    -289600718,
+    1703775715,
+    481457832,
+    -745635811,
+    647435005,
+    -752709918,
+    488531939,
+    -2058062490,
+    1882777411,
+    -638330008,
+    1391910703,
+    -1587952850,
+    -2065136597,
+    1448099960,
+    800061803,
+    1875703304,
+    -2072754440,
+    932155281,
+    939229388,
+    -1464384108,
+    -1698614562,
+    -773170491,
+    1954852303,
+    1696701608,
+    1088053304,
+    -669249180,
+    -1599268642,
+    1452929166,
+    -212198113,
+    692547890,
+    169637663,
+    39004433,
+    46078540,
+    1603924293,
+    -1161019083,
+    936504974,
+    943579081,
+    1046872708,
+    -233517159,
+    -1087343630,
+    -1080269523,
+    1146952579,
+    1139716174,
+    -1022267654,
+    1132642067
+  ]
+}
