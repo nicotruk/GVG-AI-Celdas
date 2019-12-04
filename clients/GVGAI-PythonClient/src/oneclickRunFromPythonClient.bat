@@ -1,6 +1,6 @@
 @echo off
 
-set gameId=0
+set gameId=90
 set shDir=utils
 set serverDir=..\..\..
 
