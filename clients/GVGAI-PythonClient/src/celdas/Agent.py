@@ -2,17 +2,27 @@ import random
 
 from AbstractPlayer import AbstractPlayer
 from Types import *
+from celdas.ReplayMemory import ReplayMemory
 
 from utils.Types import LEARNING_SSO_TYPE
 from utils.SerializableStateObservation import Observation
 import math
 import numpy as np
 from pprint import pprint
+import tensorflow as tf
+from tensorflow import keras
+
+tf.compat.v1.enable_v2_behavior()
+
+REPLAY_MEMORY_CAPACITY = 2000
+
 
 class Agent(AbstractPlayer):
     def __init__(self):
         AbstractPlayer.__init__(self)
-       
+        self.lastGameState = None
+
+        self.replayMemory = ReplayMemory(REPLAY_MEMORY_CAPACITY)
 
     """
     * Public method to be called at the start of every level of a game.
@@ -21,8 +31,8 @@ class Agent(AbstractPlayer):
     * @param elapsedTimer Timer (1s)
     """
 
-    def init(self, sso, elapsedTimer):    
-        pass
+    def init(self, sso, elapsedTimer):
+        self.lastGameState = None
 
     """
      * Method used to determine the next move to be performed by the agent.
@@ -35,16 +45,16 @@ class Agent(AbstractPlayer):
      * @return The action to be performed by the agent.
      """
 
-    def act(self, sso, elapsedTimer):    	
-        
+    def act(self, sso, elapsedTimer):
+
         # pprint(vars(sso))
         print(self.get_perception(sso))
 
-        if sso.gameTick == 1000:
-            return "ACTION_ESCAPE"
-        else:
-            index = random.randint(0, len(sso.availableActions) - 1)
-            return sso.availableActions[index]
+        if self.lastGameState is not None:
+            pass  # TODO: Crear experiencia con el estado actual + accion + recompensa + estado siguiente
+
+        index = random.randint(0, len(sso.availableActions) - 1)
+        return sso.availableActions[index]
 
     """
     * Method used to perform actions in case of a game end.
@@ -63,24 +73,23 @@ class Agent(AbstractPlayer):
         return random.randint(0, 2)
 
     def get_perception(self, sso):
-        sizeWorldWidthInPixels= sso.worldDimension[0]
-        sizeWorldHeightInPixels= sso.worldDimension[1];
+        sizeWorldWidthInPixels = sso.worldDimension[0]
+        sizeWorldHeightInPixels = sso.worldDimension[1];
         levelWidth = len(sso.observationGrid);
         levelHeight = len(sso.observationGrid[0]);
-        
-        spriteSizeWidthInPixels =  sizeWorldWidthInPixels / levelWidth;
-        spriteSizeHeightInPixels =  sizeWorldHeightInPixels/ levelHeight;
+
+        spriteSizeWidthInPixels = sizeWorldWidthInPixels / levelWidth;
+        spriteSizeHeightInPixels = sizeWorldHeightInPixels / levelHeight;
         level = np.chararray((levelHeight, levelWidth))
         level[:] = '.'
         avatar_observation = Observation()
-        for ii in range(levelWidth):                    
+        for ii in range(levelWidth):
             for jj in range(levelHeight):
                 listObservation = sso.observationGrid[ii][jj]
                 if len(listObservation) != 0:
-                    aux = listObservation[len(listObservation)-1]
+                    aux = listObservation[len(listObservation) - 1]
                     if aux is None: continue
                     level[jj][ii] = self.detectElement(aux)
-    
 
         return level
 
@@ -94,8 +103,8 @@ class Agent(AbstractPlayer):
                 return 'L'
             else:
                 return 'A'
-            
-             
+
+
         elif o.category == 0:
             if o.itype == 5:
                 return 'A'
@@ -105,7 +114,7 @@ class Agent(AbstractPlayer):
                 return 'A'
             else:
                 return 'A'
-             
+
         elif o.category == 6:
             return 'e'
         elif o.category == 2:
@@ -113,13 +122,12 @@ class Agent(AbstractPlayer):
         elif o.category == 3:
             if o.itype == 1:
                 return 'e'
-            else:         
-                return 'e'         
+            else:
+                return 'e'
         elif o.category == 5:
             if o.itype == 5:
                 return 'x'
-            else:         
+            else:
                 return 'e'
-        else:                          
+        else:
             return '?'
-        
