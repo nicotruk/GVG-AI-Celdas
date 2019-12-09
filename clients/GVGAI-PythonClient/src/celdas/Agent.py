@@ -2,6 +2,7 @@ import random
 
 from AbstractPlayer import AbstractPlayer
 from Types import *
+from celdas.ExploreExploitDecision import ExploreExploitDecision
 from celdas.ReplayMemory import ReplayMemory
 
 from utils.Types import LEARNING_SSO_TYPE
@@ -15,6 +16,8 @@ from tensorflow import keras
 tf.compat.v1.enable_v2_behavior()
 
 REPLAY_MEMORY_CAPACITY = 2000
+BATCH_SIZE = 100  # Entrena la red con muestras de 100 movimientos
+AVAILABLE_ACTIONS_QUANTITY = 5  # Arriba - Abajo - Izquierda - Derecha - Atacar
 
 
 class Agent(AbstractPlayer):
@@ -23,6 +26,7 @@ class Agent(AbstractPlayer):
         self.lastGameState = None
 
         self.replayMemory = ReplayMemory(REPLAY_MEMORY_CAPACITY)
+        self.exploreExploitDecision = ExploreExploitDecision()
 
     """
     * Public method to be called at the start of every level of a game.
@@ -53,8 +57,24 @@ class Agent(AbstractPlayer):
         if self.lastGameState is not None:
             pass  # TODO: Crear experiencia con el estado actual + accion + recompensa + estado siguiente
 
-        index = random.randint(0, len(sso.availableActions) - 1)
+        index = self.get_next_action()
         return sso.availableActions[index]
+
+    def get_next_action(self):
+        if self.exploreExploitDecision.decide_to_explore():
+            # TODO: Explorar! Cambiar linea de abajo
+            return random.randint(0, AVAILABLE_ACTIONS_QUANTITY - 1)
+        else:
+            # Explotar!
+            return random.randint(0, AVAILABLE_ACTIONS_QUANTITY - 1)
+
+    def optimize_model(self):
+        if len(self.replayMemory) < BATCH_SIZE * 2:
+            # No entrenar
+            return
+        # Empieza el entrenamiento...
+        batch = self.replayMemory.sample(BATCH_SIZE)  # Tomar muestra
+        # TODO: Continuar...
 
     """
     * Method used to perform actions in case of a game end.
