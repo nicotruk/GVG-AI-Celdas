@@ -94,12 +94,12 @@ class Agent(AbstractPlayer):
 
     def get_perception(self, sso):
         sizeWorldWidthInPixels = sso.worldDimension[0]
-        sizeWorldHeightInPixels = sso.worldDimension[1];
-        levelWidth = len(sso.observationGrid);
-        levelHeight = len(sso.observationGrid[0]);
+        sizeWorldHeightInPixels = sso.worldDimension[1]
+        levelWidth = len(sso.observationGrid)
+        levelHeight = len(sso.observationGrid[0])
 
-        spriteSizeWidthInPixels = sizeWorldWidthInPixels / levelWidth;
-        spriteSizeHeightInPixels = sizeWorldHeightInPixels / levelHeight;
+        spriteSizeWidthInPixels = sizeWorldWidthInPixels / levelWidth
+        spriteSizeHeightInPixels = sizeWorldHeightInPixels / levelHeight
         level = np.chararray((levelHeight, levelWidth))
         level[:] = '.'
         avatar_observation = Observation()
@@ -117,37 +117,36 @@ class Agent(AbstractPlayer):
         if o.category == 4:
             if o.itype == 3:
                 return '0'
-            elif o.itype == 0:
+            elif o.itype == 0:  # This is a WALL
                 return 'w'
-            elif o.itype == 4:
+            elif o.itype == 4:  # This is a KEY
                 return 'L'
-            else:
+            else:  # This is the AGENT
                 return 'A'
 
-
         elif o.category == 0:
-            if o.itype == 5:
+            if o.itype == 5:  # AGENT???
                 return 'A'
             elif o.itype == 6:
                 return 'B'
-            elif o.itype == 1:
+            elif o.itype == 1:  # AGENT???
                 return 'A'
-            else:
+            else:  # AGENT???
                 return 'A'
 
-        elif o.category == 6:
+        elif o.category == 6:  # This is an ENEMY
             return 'e'
-        elif o.category == 2:
+        elif o.category == 2:  # This is the EXIT
             return 'S'
         elif o.category == 3:
-            if o.itype == 1:
+            if o.itype == 1:  # ENEMY???
                 return 'e'
-            else:
+            else:  # ENEMY???
                 return 'e'
         elif o.category == 5:
             if o.itype == 5:
                 return 'x'
-            else:
+            else:  # ENEMY???
                 return 'e'
         else:
             return '?'
