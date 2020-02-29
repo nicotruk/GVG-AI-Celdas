@@ -17,7 +17,10 @@ tf.compat.v1.enable_v2_behavior()
 
 REPLAY_MEMORY_CAPACITY = 2000
 BATCH_SIZE = 100  # Entrena la red con muestras de 100 movimientos
-AVAILABLE_ACTIONS_QUANTITY = 5  # Arriba - Abajo - Izquierda - Derecha - Atacar
+AVAILABLE_ACTIONS_QUANTITY = 5  # Atacar - Izquierda - Derecha - Abajo - Arriba
+AGENT_MATRIX_WIDTH = 7  # siempre impar! para que la matriz sea centrada en el agente
+AGENT_MATRIX_HEIGHT = 7  # siempre impar! para que la matriz sea centrada en el agente
+STATE_SIZE = AGENT_MATRIX_WIDTH * AGENT_MATRIX_HEIGHT + 3  # 117
 
 
 class Agent(AbstractPlayer):
@@ -27,6 +30,11 @@ class Agent(AbstractPlayer):
 
         self.replayMemory = ReplayMemory(REPLAY_MEMORY_CAPACITY)
         self.exploreExploitDecision = ExploreExploitDecision()
+
+        # self.model = keras.Sequential()
+        # self.model.add(keras.layers.Dense(STATE_SIZE, input_dim=STATE_SIZE, activation="relu"))  # fully-connected layer
+        # self.model.add(keras.layers.Dense(AVAILABLE_ACTIONS_QUANTITY))  # salida
+        # self.model.compile(optimizer="adam", learning_rate=1e-2, loss="mean_square")
 
     """
     * Public method to be called at the start of every level of a game.
@@ -52,7 +60,10 @@ class Agent(AbstractPlayer):
     def act(self, sso, elapsedTimer):
 
         # pprint(vars(sso))
-        print(self.get_perception(sso))
+        perception = self.get_perception(sso)
+        print(perception)
+        print("*******************************************************************************************")
+        print(self.buildState(perception, sso.avatarOrientation))
 
         if self.lastGameState is not None:
             pass  # TODO: Crear experiencia con el estado actual + accion + recompensa + estado siguiente
@@ -150,3 +161,51 @@ class Agent(AbstractPlayer):
                 return 'e'
         else:
             return '?'
+
+    # obtenido del archivo Types.py - Actions to int
+    actions = ['ACTION_USE', 'ACTION_LEFT', 'ACTION_RIGHT', 'ACTION_DOWN', 'ACTION_UP']
+
+    def calculateDistanceToExit(self, playerPositionX, playerPositionY, exitPositionX, exitPositionY):
+        return math.sqrt(pow(exitPositionX - playerPositionX, 2) + pow(exitPositionY - playerPositionY, 2))
+
+    def buildState(self, gameState, avatarOrientation):
+        # Buscamos la posicion del agente
+        player_x = 0
+        player_y = 0
+        exit_x = 0
+        exit_y = 0
+        for i in range(0, len(gameState) - 1):
+            for j in range(0, len(gameState[i]) - 1):
+                if gameState[i][j] == 'A':
+                    player_x = i
+                    player_y = j
+                if gameState[i][j] == 'S':
+                    exit_x = i
+                    exit_y = j
+
+        # Inicializacion del resultado vacio
+        result = []
+        for i in range(0, STATE_SIZE):
+            result.append(0)
+
+        # Tomamos una matriz de AGENT_MATRIX_WIDTH x AGENT_MATRIX_HEIGHT  con centro en el agente
+        i = 0
+        for x in range(player_x - math.trunc((AGENT_MATRIX_WIDTH - 1) / 2),
+                       player_x + math.trunc((AGENT_MATRIX_WIDTH - 1) / 2)):
+            for y in range(player_y - math.trunc((AGENT_MATRIX_HEIGHT - 1) / 2),
+                           player_y + math.trunc((AGENT_MATRIX_HEIGHT - 1) / 2)):
+                try:
+                    result[i] = gameState[x][y]
+                except IndexError:
+                    result[i] = 0
+                i += 1
+
+        # Agregamos la distancia del agente a la salida
+        result[i] = self.calculateDistanceToExit(player_x, player_y, exit_x, exit_y)
+
+        # Agregamos la posicion del agente
+        i += 1
+        result[i] = avatarOrientation[0]
+        i += 1
+        result[i] = avatarOrientation[1]
+        return result
