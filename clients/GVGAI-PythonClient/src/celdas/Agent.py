@@ -20,7 +20,7 @@ BATCH_SIZE = 100  # Entrena la red con muestras de 100 movimientos
 AVAILABLE_ACTIONS_QUANTITY = 5  # Atacar - Izquierda - Derecha - Abajo - Arriba
 AGENT_MATRIX_WIDTH = 7  # siempre impar! para que la matriz sea centrada en el agente
 AGENT_MATRIX_HEIGHT = 7  # siempre impar! para que la matriz sea centrada en el agente
-STATE_SIZE = AGENT_MATRIX_WIDTH * AGENT_MATRIX_HEIGHT + 3  # 117
+STATE_SIZE = AGENT_MATRIX_WIDTH * AGENT_MATRIX_HEIGHT + 3  # Matriz + Dist a Salida + Pos Agente x2
 
 
 class Agent(AbstractPlayer):
@@ -63,13 +63,18 @@ class Agent(AbstractPlayer):
         perception = self.get_perception(sso)
         print(perception)
         print("*******************************************************************************************")
-        print(self.buildState(perception, sso.avatarOrientation))
+        currentState = self.buildState(perception, sso.avatarOrientation)
+        print(currentState)
 
         if self.lastGameState is not None:
             pass  # TODO: Crear experiencia con el estado actual + accion + recompensa + estado siguiente
 
         index = self.get_next_action()
-        return sso.availableActions[index]
+        action = sso.availableActions[index]
+
+        self.lastGameState = currentState
+
+        return action
 
     def get_next_action(self):
         if self.exploreExploitDecision.decide_to_explore():
@@ -162,6 +167,24 @@ class Agent(AbstractPlayer):
         else:
             return '?'
 
+    def elementToInt(self, element):
+        if element == 'w':
+            return 1.0
+        elif element == 'L':
+            return 2.0
+        elif element == 'A':
+            return 3.0
+        elif element == 'B':
+            return 4.0
+        elif element == 'e':
+            return 5.0
+        elif element == 'S':
+            return 6.0
+        elif element == 'x':
+            return 7.0
+        else:
+            return 8.0
+
     # obtenido del archivo Types.py - Actions to int
     actions = ['ACTION_USE', 'ACTION_LEFT', 'ACTION_RIGHT', 'ACTION_DOWN', 'ACTION_UP']
 
@@ -196,7 +219,7 @@ class Agent(AbstractPlayer):
                            player_y + math.trunc((AGENT_MATRIX_HEIGHT - 1) / 2) + 1):
                 if x >= 0 and y >= 0:
                     try:
-                        result[i] = gameState[x][y]
+                        result[i] = self.elementToInt(gameState[x][y])
                     except IndexError:
                         result[i] = 0
                 else:
