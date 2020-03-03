@@ -191,12 +191,15 @@ class Agent(AbstractPlayer):
         # Tomamos una matriz de AGENT_MATRIX_WIDTH x AGENT_MATRIX_HEIGHT  con centro en el agente
         i = 0
         for x in range(player_x - math.trunc((AGENT_MATRIX_WIDTH - 1) / 2),
-                       player_x + math.trunc((AGENT_MATRIX_WIDTH - 1) / 2)):
+                       player_x + math.trunc((AGENT_MATRIX_WIDTH - 1) / 2) + 1):
             for y in range(player_y - math.trunc((AGENT_MATRIX_HEIGHT - 1) / 2),
-                           player_y + math.trunc((AGENT_MATRIX_HEIGHT - 1) / 2)):
-                try:
-                    result[i] = gameState[x][y]
-                except IndexError:
+                           player_y + math.trunc((AGENT_MATRIX_HEIGHT - 1) / 2) + 1):
+                if x >= 0 and y >= 0:
+                    try:
+                        result[i] = gameState[x][y]
+                    except IndexError:
+                        result[i] = 0
+                else:
                     result[i] = 0
                 i += 1
 
